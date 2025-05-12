@@ -1,0 +1,29 @@
+# Ignore everything by default in src/huxt
+src/huxt/*
+# But allow huxt_utils.py
+!src/huxt/huxt_utils.py
+
+# Include everything in src/ml
+# (no rule needed if nothing is ignored)
+
+# Include everything in src/figures
+# (no rule needed if nothing is ignored)
+
+# Ignore everything in src/data
+src/data/
+
+# Ignore nothing in root directory
+# (no rule needed unless specific files need ignoring)
+
+# Ignore ipynb_checkpoints
+**/.ipynb_checkpoints/
+.ipynb_checkpoints/
+
+# Optional: general ignores
+__pycache__/
+*.pyc
+*.pyo
+*.log
+*.tmp
+.DS_Store
+.env
