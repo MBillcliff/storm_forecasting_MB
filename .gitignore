@@ -28,7 +28,6 @@ HUXt_tools/
 .ipynb_checkpoints/
 
 # Ignore virtual_documents
-**/.virtual_documents/*
 .virtual_documents/
 
 # Optional: general ignores

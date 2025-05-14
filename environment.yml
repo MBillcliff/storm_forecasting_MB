@@ -1,8 +1,9 @@
-name: huxt
+name: storm_forecasting
+
 
 channels:
   - conda-forge
-  - defaults
+
   
 dependencies:
   - python=3.9.19
