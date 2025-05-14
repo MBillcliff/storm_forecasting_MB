@@ -5,8 +5,8 @@ This repository provides the implementation of machine learning for geomagnetic 
 ## Installation
 In terminal, navigate to the root directory of this repository and run the following to install the HUXt and HUXt_tools dependencies:
 ```
-git submodule add https://github.com/University-of-Reading-Space-Science/HUXt
-git submodule add https://github.com/mathewjowens/HUXt_tools
+git submodule add -f https://github.com/University-of-Reading-Space-Science/HUXt
+git submodule add -f https://github.com/mathewjowens/HUXt_tools
 ```
 
 Due to the range of dependencies, we recommend setting up a virtual environment using and updated version of conda and the provided [environment.yml](environment.yml) file. In the root directory of storm_forecasting_MB:
