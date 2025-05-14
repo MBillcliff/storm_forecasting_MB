@@ -9,7 +9,7 @@ git submodule add -f https://github.com/University-of-Reading-Space-Science/HUXt
 git submodule add -f https://github.com/mathewjowens/HUXt_tools
 ```
 
-Due to the range of dependencies, we recommend setting up a virtual environment using and updated version of conda and the provided [environment.yml](environment.yml) file. In the root directory of storm_forecasting_MB:
+Due to the range of dependencies, we recommend setting up a virtual environment using a recent version of conda and the provided [environment.yml](environment.yml) file. In the root directory of storm_forecasting_MB:
 ```
 conda env create -f environment.yml
 conda activate storm_forecasting
