@@ -1,4 +1,4 @@
-# Extended Lead Time Geomagnetic Storm Forecasting 
+# Extended Lead-Time Geomagnetic Storm Forecasting with Solar Wind Ensembles and Machine Learning
 ## Introduction
 This repository provides the implementation of machine learning for geomagnetic storm time with solar wind ensembles. Billcliff et al. (2025, in review)
 
@@ -8,7 +8,7 @@ In terminal, navigate to the root directory of this repository and run the follo
 git submodule add https://github.com/University-of-Reading-Space-Science/HUXt
 git submodule add https://github.com/mathewjowens/HUXt_tools
 ```
-Set up virtual environment according to instructions from https://github.com/University-of-Reading-Space-Science/HUXt
+Set up virtual environment according to instructions from [University of Reading HUXt github page](https://github.com/University-of-Reading-Space-Science/HUXt)
 
 ## Usage
 Run the notebooks in the following order:
