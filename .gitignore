@@ -10,7 +10,8 @@ src/huxt/*
 # (no rule needed if nothing is ignored)
 
 # Ignore everything in src/data
-src/data/
+src/data/*
+!src/data/.gitkeep
 
 # Ignore HUXt directories
 HUXt/
