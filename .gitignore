@@ -11,7 +11,13 @@ src/huxt/*
 
 # Ignore everything in src/data
 src/data/*
+# Include the .gitkeep so empty directory is included
 !src/data/.gitkeep
+
+# Ignore everything in src/figures
+src/figures/*
+# Include the .gitkeep so empty directory is included
+!src/figures/metric_tables/.gitkeep
 
 # Ignore HUXt directories
 HUXt/
@@ -20,6 +26,10 @@ HUXt_tools/
 # Ignore ipynb_checkpoints
 **/.ipynb_checkpoints/
 .ipynb_checkpoints/
+
+# Ignore virtual_documents
+**/.virtual_documents/*
+.virtual_documents/
 
 # Optional: general ignores
 __pycache__/

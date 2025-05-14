@@ -13,9 +13,11 @@ import time
 import sys
 import os
 
-huxt_dir = os.path.join(os.getcwd(), 'src', 'huxt')
+huxt_dir = os.path.join(os.getcwd(), 'HUXt', 'code')
+huxt_tools_dir = os.path.join(os.getcwd(), 'HUXt_tools')
 
 sys.path.append(huxt_dir)
+sys.path.append(huxt_tools_dir)
 
 import huxt as H
 import huxt_analysis as HA
@@ -62,9 +64,18 @@ def huxt_output_to_ml_df(rotation_number, extra_columns, folder_name, overwrite=
 
     # Check whether to include velocity gradient
     if 'velocity gradient' in extra_columns or 'density' in extra_columns:
-        # Add a gradient column for each velocity array
+        # Build new gradient columns all at once to avoid fragmentation
+        gradient_cols = {}
+    
         for i in range(number_ensemble_members):
-            df[f'v_{i}_gradient'] = np.gradient(np.array(df[f'v_{i}']))
+            gradient = np.gradient(np.array(df[f'v_{i}']))
+            gradient_cols[f'v_{i}_gradient'] = gradient
+    
+        # Add all new columns at once
+        df = pd.concat([df, pd.DataFrame(gradient_cols, index=df.index)], axis=1)
+    
+        # de-fragment the DataFrame
+        df = df.copy()
 
     # Gather Hpo data for the rotation
     df_cadence = df.index[1] - df.index[0]
