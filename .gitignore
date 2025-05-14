@@ -12,8 +12,9 @@ src/huxt/*
 # Ignore everything in src/data
 src/data/
 
-# Ignore nothing in root directory
-# (no rule needed unless specific files need ignoring)
+# Ignore HUXt directories
+HUXt/
+HUXt_tools/
 
 # Ignore ipynb_checkpoints
 **/.ipynb_checkpoints/
