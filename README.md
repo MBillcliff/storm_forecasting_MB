@@ -8,7 +8,16 @@ In terminal, navigate to the root directory of this repository and run the follo
 git submodule add https://github.com/University-of-Reading-Space-Science/HUXt
 git submodule add https://github.com/mathewjowens/HUXt_tools
 ```
-Set up virtual environment according to instructions from [University of Reading HUXt github page](https://github.com/University-of-Reading-Space-Science/HUXt)
+
+Due to the range of dependencies, we recommend setting up a virtual environment using and updated version of conda and the provided [environment.yml](environment.yml) file. In the root directory of storm_forecasting_MB:
+```
+conda env create -f environment.yml
+conda activate storm_forecasting
+```
+The code can then be accessed from the root directory with:
+```
+jupyter lab .
+```
 
 ## Usage
 Run the notebooks in the following order:
